@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script>
+			layui.config({
+				base: 'js/modules/' //存放新模块的目录，注意，不是layui的模块目录
+			}).use('usersinfo'); //加载入口
+		</script>
+	</head>
+	<body>
+		<div id="text" style="margin-left: 50px;margin-top: 10px;">
+			<form class="layui-form" action="">
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">昵称</label>
+						<div class="layui-input-block">
+							<input id="name" type="text" name="name" lay-verify="required"  autocomplete="off" class="layui-input" size="35px">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">手机号</label>
+						<div class="layui-input-block">
+							<input id="tel" type="tel" name="phone" lay-verify="required|phone" placeholder="建议使用常用手机号"  autocomplete="off" class="layui-input" size="35px">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">邮箱</label>
+						<div class="layui-input-block">
+							<input id="email" type="text" name="email" lay-verify="email" autocomplete="off" placeholder="建议使用常用邮箱" class="layui-input" size="35px">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">余额</label>
+						<div class="layui-input-block">
+							<input id="money" type="text" name="money" lay-verify="required" autocomplete="off" placeholder="0" class="layui-input" size="35px">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item ">
+					<div class="layui-inline ">
+						<label class="layui-form-label ">原密码</label>
+						<div class="layui-input-block ">
+							<input id="pwd" type="text " name="pwd " autocomplete="off " required lay-verify="required" class="layui-input " placeholder="请输入原始密码 " size="35px ">
+						</div>
+					</div>
+				</div>
+					<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">新密码</label>
+						<div class="layui-input-block">
+							<input type="password" name="password"   class="layui-input" placeholder="使用6位数以上大小写字母加数字" size="35px">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item" style="margin-left: 10px;margin-top: 20px;">
+					<div class="layui-input-block">
+						<button id="button" class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+						<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

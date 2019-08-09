@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="css/buy.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script>
+			layui.config({
+				base: 'js/modules/' //存放新模块的目录，注意，不是layui的模块目录
+			}).use('buy'); //加载入口
+		</script>
+	</head>
+
+	<body>
+		<div style="background-color:#F8F8F8;color: #999; height: 40px;">
+			<div class="header">
+				<i class="layui-icon layui-icon-location" style="position:absolute ;padding-top: 20px;"></i>
+				<span style="margin-left: 25px;padding-top: 20px;position:absolute ;">武汉</span>
+				<span id="login" style="color:#2bb8aa ;margin-left: 100px;padding-top: 20px;position:absolute ;cursor:pointer;">立即登录</span>
+				<a href="logon.html" class="a" style="margin-left: 180px;padding-top: 20px;position:absolute ;cursor:pointer;color: #999;">注册</a>
+				<div style="width: 312px;height: 40px; float: right;">
+					<span class="a" style="padding-top: 20px;position:absolute ;cursor:pointer;color: #999;" id="myName">我的美团</span>
+					<span class="a" style="padding-top: 20px;margin-left:80px;position:absolute ;cursor:pointer;color: #999;">商家中心</span>
+					<span class="a" style="padding-top: 20px;margin-left:150px;position:absolute ;cursor:pointer;color: #999;">网址导航</span>
+				</div>
+			</div>
+		</div>
+		<div class="logo">
+			<div id="img" style="width: 280px; height: 122px;float: left;">
+				<img src="img/logo.png" width="126px" height="46px" style="margin-top: 50px;" />
+			</div>
+			<div class="search" style="width: 552px; height: 95px; float: left; margin-top: 50px;">
+				<div class="layui-input-block">
+					<input type="text" name="title" required lay-verify="required" placeholder="搜索商家或地点" autocomplete="off" class="layui-input" style="margin-left: -110px;border:2px solid #2bb8aa;float: left;">
+					<button class="layui-btn" style="float: left;background-color:#2bb8aa ;">搜索</button>
+				</div>
+			</div>
+		</div>
+		<div class="center" style="background-color: #F8F8F8 ; width: 100%; height:600px;">
+			<div class="card">
+
+				<div class="one">
+					<div> <span style="margin-left: 200px;">套餐名</span><span style="margin-left: 170px;">单价</span><span style="margin-left: 154px;">数量</span><span style="margin-left: 129px;">总价</span></div>
+					<img id="goods-img" src="img/group1.png" width="100px" height="100px" style="float: left;" />
+					<div class="info">
+						<div style="margin-left: 880px;position:absolute ; margin-top: 14px;" id="button">
+							<button class="layui-btn layui-btn-warm layui-btn-radius layui-btn-lg">加入购物车</button>
+						</div>
+						<div  style="margin-top: 30px;">
+							<span id="title" style="font-size: 16px;margin-left: 30px;width: 200px">基佬双人餐，提供免费WiFi</span>
+							<span class="price1"><b style="font-weight: 400;font-size: 14px;">￥</b><span id="price">68</span></span>
+							<div  style="margin-left: 454px; margin-top: -27px;width: 130px;" >
+								<button class="layui-btn layui-btn-primary layui-btn-sm" id="reduce">
+    								<i class="layui-icon">-</i>
+  								</button>
+  								<div class="layui-inline">
+								<input style="height: 30px; width: 50px;border: solid 1px #C9C9C9;" type="text" name=""  class="layui-input" value="1" id="input">
+								</div>
+								<button class="layui-btn layui-btn-primary layui-btn-sm" id="add">
+   									 <i class="layui-icon">+</i>
+  								</button>
+							</div>
+						
+								<span class="price"><b style="font-weight: 400;font-size: 14px;">￥</b><span id="total">68</span></span>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+
+</html>

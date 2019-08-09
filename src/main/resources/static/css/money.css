@@ -1,0 +1,47 @@
+div{
+	margin: 0;
+	padding: 0;
+}
+#money{
+	width: 800px;
+	height: 490px;
+	
+	margin-left: 25%;
+	margin-top: 2%;
+}
+#check{
+	width: 400px;
+	height: 280px;
+/*	background-color: #00FF00;*/
+	margin-left: 110px;
+	margin-top: 30px;
+}
+.check{
+	width: 150px;
+	height: 80px;
+	float: left;
+	margin-left: 30px;
+/*	background-color: #1E9FFF;*/
+	margin-top: 27px;
+	text-align: center;
+	line-height: 75px;
+	color: #FFB800;
+	font-size: 20px;
+	border:2px solid #777777 ;
+}
+#input{
+	width: 150px;
+	height: 80px;
+	float: left;
+	margin-left: 30px;
+/*	background-color: #1E9FFF;*/
+	margin-top: 27px;
+	text-align: center;
+	line-height: 75px;
+	color: #FFB800;
+	font-size: 20px;
+	border:1px solid #777777 ;
+}
+#first{
+	border:2px solid #FFB800 ;
+}

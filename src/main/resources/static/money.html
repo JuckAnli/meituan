@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="css/money.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script>
+			layui.config({
+				base: 'js/modules/' //存放新模块的目录，注意，不是layui的模块目录
+			}).use('money'); //加载入口
+		</script>
+	</head>
+	<body>
+		<div id="money">
+			<blockquote class="layui-elem-quote">账户余额：<span id="blance" style="color: #FFB800;font-size: 20px;">1000</span>  团币</blockquote>
+			<i class="layui-icon" style="margin-left: 23px;">&#xe656;</i><span style="margin-left: 10px;">充值金额:</span>
+			<div id="check">
+				<div id="first" class="check">100</div>
+				<div class="check">500</div>
+				<div class="check">1000</div>
+				<input id="input" placeholder="充值金额"/>
+			</div>
+			<i class="layui-icon" style="margin-left: 23px;font-size: 20px;">&#xe659;</i><span style="margin-left: 8px;font-size: 15px;">支付金额:</span>
+			<span id="data" style="color: #FFB800;font-size: 20px;">100</span>   元
+			<div class="site-demo-button" id="layerDemo" style="margin-bottom: 0;margin-left: 200px;margin-top: 20px;">
+			<button id="out" data-method="offset" data-type="auto" class="layui-btn layui-btn-normal" style="width: 200px;">立即充值</button>
+			</div>
+		</div>
+	</body>
+</html>

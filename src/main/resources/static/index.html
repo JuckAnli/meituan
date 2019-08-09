@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script>
+			layui.config({
+				base: 'js/modules/' //存放新模块的目录，注意，不是layui的模块目录
+			}).use('index'); //加载入口
+		</script>
+	</head>
+
+	<body>
+		<div style="background-color:#F8F8F8;color: #999; height: 40px;">
+			<div class="header">
+				<i class="layui-icon layui-icon-location" style="position:absolute ;padding-top: 20px;"></i>
+				<span style="margin-left: 25px;padding-top: 20px;position:absolute ;">武汉</span>
+				<span id="login" style="color:#2bb8aa ;margin-left: 100px;padding-top: 20px;position:absolute ;cursor:pointer;">立即登录</span>
+				<a href="logon.html" class="a" style="margin-left: 180px;padding-top: 20px;position:absolute ;cursor:pointer;color: #999;">注册</a>
+				<div style="width: 312px;height: 40px; float: right;">
+					<span class="a" style="padding-top: 20px;position:absolute ;cursor:pointer;color: #999;" id="name">我的美团</span>
+					<span class="a" style="padding-top: 20px;margin-left:80px;position:absolute ;cursor:pointer;color: #999;">商家中心</span>
+					<span class="a" style="padding-top: 20px;margin-left:150px;position:absolute ;cursor:pointer;color: #999;">网址导航</span>
+				</div>
+			</div>
+		</div>
+		<div class="logo">
+			<div id="img" style="width: 280px; height: 122px;float: left;">
+				<img src="img/logo.png" width="126px" height="46px" style="margin-top: 50px;" />
+			</div>
+			<div class="search" style="width: 552px; height: 95px; float: left; margin-top: 50px;">
+				<div class="layui-input-block">
+					<input type="text" name="title" required lay-verify="required" placeholder="搜索商家或地点" autocomplete="off" class="layui-input" style="margin-left: -110px;border:2px solid #2bb8aa;float: left;">
+					<button class="layui-btn" style="float: left;background-color:#2bb8aa ;">搜索</button>
+				</div>
+			</div>
+		</div>
+		<div class="center">
+			<div class="left">
+				<div class="left-header" style="background-color:#28C0AC;height: 50px;">
+					<span style="color: white; font-size: 20px;margin-left: 20px;padding-top: 20px;position:absolute ;">全部分类</span>
+				</div>
+				<ul style="margin-top: 10px; width:230px ;">
+					<li><span class="span">美食</span> <span style="margin-left: 150px;">></span></li>
+					<li><span class="span">外卖</span><span style="margin-left: 153px;">></span></li>
+					<li><span class="span">酒店</span><span style="margin-left: 153px;">></span></li>
+					<li><span class="span">猫眼电影</span><span style="margin-left: 123px;">></span></li>
+					<li><span class="span">机票/火车票</span><span style="margin-left: 103px;">></span></li>
+					<li><span class="span">休闲娱乐/KTV</span><span style="margin-left: 88px;">></span></li>
+					<li><span class="span">生活服务</span></li>
+					<li><span class="span">丽人/美发/医学美容</span></li>
+					<li><span class="span">结婚/婚纱摄影/婚宴</span></li>
+					<li><span class="span">亲子/儿童乐园/幼教</span></li>
+					<li><span class="span">运动健身/健身中心</span></li>
+					<li><span class="span">家装/建材/家居</span></li>
+					<li><span class="span">学习培训/音乐培训</span></li>
+					<li><span class="span">医疗健康/宠物/爱车</span></li>
+				</ul>
+			</div>
+			<div class="run">
+				<div class="layui-carousel" id="test1">
+					<div carousel-item>
+						<div><img src="img/run1.png" width="930px" height="427px"></div>
+						<div><img src="img/run2.png" width="930px" height="427px"></div>
+						<div><img src="img/run3.png" width="930px" height="427px"></div>
+						<div><img src="img/run4.png" width="930px" height="427px"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="goods">
+				<div class="img">
+					<img class="img1" src="img/good1.png" />
+					<div class="title">猫三三女仆咖啡屋</div>
+					<div class="sub-title">甜系妹抖陪伴餐，建议单人使用</div>
+					<div class="price-info">
+						<span class="numfont">￥</span>
+						<span class="current-price">98</span>
+						<span class="old-price">门市价￥128</span>
+						<span class="info">江汉路步行街</span>
+					</div>
+				</div>
+			</div>
+			<div class="goods">
+				<div class="img">
+					<img class="img1" src="img/good2.png" />
+					<div class="title">必胜客(徐东店)</div>
+					<div class="sub-title">【超值丰盛2人餐 A103】1份</div>
+					<div class="price-info">
+						<span class="numfont">￥</span>
+						<span class="current-price">159</span>
+						<span class="old-price">门市价￥234</span>
+						<span class="info">徐东大街</span>
+					</div>
+				</div>
+			</div>
+			<div class="goods">
+				<div class="img">
+					<img class="img1" src="img/good3.png" />
+					<div class="title">桃花醉小酒馆(积玉桥店)</div>
+					<div class="sub-title">六欲酒1份，包间免费</div>
+					<div class="price-info">
+						<span class="numfont">￥</span>
+						<span class="current-price">38</span>
+						<span class="old-price">门市价￥48</span>
+						<span class="info">和平大道积玉桥</span>
+					</div>
+				</div>
+			</div>
+			<div class="goods">
+				<div class="img">
+					<img class="img1" src="img/good4.png" />
+					<div class="title">在水一方</div>
+					<div class="sub-title">在水一方</div>
+					<div class="price-info">
+						<span class="numfont">￥</span>
+						<span class="current-price">159</span>
+						<span class="old-price">门市价￥346</span>
+						<span class="info">无合适商圈</span>
+					</div>
+				</div>
+			</div>
+			<div class="goods">
+				<div class="img">
+					<img class="img1" src="img/good5.png" />
+					<div class="title">汕头八合里海记牛肉店(汉江路店)</div>
+					<div class="sub-title">四人晚市套餐，提供免费WiFi</div>
+					<div class="price-info">
+						<span class="numfont">￥</span>
+						<span class="current-price">228</span>
+						<span class="old-price">门市价￥374</span>
+						<span class="info">江汉路步行街</span>
+					</div>
+				</div>
+			</div>
+			<div class="goods">
+				<div class="img">
+					<img class="img1" src="img/good6.png" />
+					<div class="title">皇冠蛋糕(学院店)</div>
+					<div class="sub-title">蛋糕6选1，约8英寸</div>
+					<div class="price-info">
+						<span class="numfont">￥</span>
+						<span class="current-price">152</span>
+						<span class="old-price">门市价￥169</span>
+						<span class="info">徐东大街</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

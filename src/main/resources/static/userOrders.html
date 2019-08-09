@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script>
+			layui.config({
+				base: 'js/modules/' //存放新模块的目录，注意，不是layui的模块目录
+			}).use('userOrders'); //加载入口
+		</script>
+	</head>
+
+	<body>
+		<div id="text" style="margin-left: 50px;margin-top: 10px;">
+			<form class="layui-form" action="">
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">用户</label>
+						<div class="layui-input-block">
+							<input id="name" type="text" name="name" lay-verify="required"  class="layui-input" readonly size="35px">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">商品</label>
+						<div class="layui-input-block">
+							<input id="goods" type="text" name="goodsName" lay-verify="required"  class="layui-input" size="35px">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">单价</label>
+						<div class="layui-input-block">
+							<input id="price" type="text" name="price" lay-verify="required" class="layui-input" size="35px">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item ">
+					<div class="layui-inline ">
+						<label class="layui-form-label ">数量</label>
+						<div class="layui-input-block ">
+							<input id="num" type="text " name="nums"  required lay-verify="required" class="layui-input " size="35px ">
+						</div>
+					</div>
+				</div>
+				
+				<div class="layui-form-item" style="margin-left: 10px;margin-top: 20px;">
+					<div class="layui-input-block">
+						<button id="button" class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+						<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>

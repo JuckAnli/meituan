@@ -1,0 +1,160 @@
+.header{
+	width: 1190px;
+	margin: 0 auto;
+	padding-bottom: 35px;
+	height: 75px;
+}
+.logo{
+	width: 1190px;
+	margin: 0 auto;
+	height: 197px;
+	/*background-color:#F8F8F8;*/
+}
+.card{
+	
+	width: 1190px;
+	height: 269px;
+	background-color: white;
+	position:absolute ;
+	margin-top: 70px;
+	margin-left: 170px;
+	border-radius:10px;
+	box-shadow:0 0 1px #000;
+}
+
+.name{
+	width: 748px;
+	height: 37px;
+	font-size: 26px;
+}
+.left{
+	width: 768px;
+	height: 193px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+.star{
+	width: 748px;
+	height: 14px;
+}
+.address{
+	width: 748px;
+	height: 119px;
+	border-top:1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 20px;
+}
+.p{
+	margin-top: 10px;
+}
+.imgbox{
+	width: 380px;
+	height: 214px;
+	float: left;
+	margin-top: 20px;
+}
+.group{
+	width: 950px;
+	height: 670px;
+	/*background-color: #00F7DE;*/
+	position:absolute ;
+	margin-top: 380px;
+	margin-left: 170px;
+}
+.goods-group{
+	width: 950px;
+	height: 635px;
+	/*background-color: #00FF00;*/
+	border-radius:10px;
+	box-shadow:0 0 1px #000;
+}
+.one{
+	width: 908px;
+	height: 120px;
+	/*background-color: #01AAED;*/
+	margin-top: 20px;
+	margin-left: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.info{
+	width: 808px;
+	height: 104px;
+	background-color: white;
+	float: left;
+}
+.group-p{
+	margin-left: 20px;
+}
+.price{
+	font-size: 30px;
+    color: #f60;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.talk{
+	width: 950px;
+	height: 1200px;
+	/*background-color: #00FF00;*/
+	position:absolute ;
+	margin-left: 170px;
+	margin-top: 1100px;
+}
+.total{
+	width: 950px;
+	height: 26px;
+	font-size: 20px;
+}
+.com{
+	width: 950px;
+	height: 1200px;
+	/*background-color: white;*/
+	border-radius:10px;
+	margin-top: 10px;
+	box-shadow:0 0 1px #000;
+}
+.list{
+	width: 920px;
+	height: 300px;
+	margin-left: 10px;
+	/*background-color: #00FFFF;*/
+}
+.head{
+	width: 60px;
+	height: 60px;
+	margin-left: 10px;
+	position:absolute ;
+	margin-top: 20px;
+	
+}
+.talk-info{
+	width: 840px;
+	height: 250px;
+	/*background-color: #01AAED;*/
+	margin-left: 80px;
+	position:absolute ;
+	margin-top: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.talk-name{
+	width: 828px;
+	height: 22px;
+	/*background-color: #00F7DE;*/
+	font-size: 16px;
+	color: #222;
+}
+.talk-star{
+	width: 828px;
+	height: 16px;
+	/*background-color: #00FF00;*/
+	margin-top: -15px;
+	
+}
+.desc{
+	width: 828px;
+	height: 93px;
+	/*background-color:white ;*/
+	margin-top: 25px;
+	padding-top: 13px;
+	color: #666;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="css/user.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script>
+			layui.config({
+				base: 'js/modules/' //存放新模块的目录，注意，不是layui的模块目录
+			}).use('user'); //加载入口
+		</script>
+	</head>
+
+	<body>
+		<ul class="layui-nav layui-bg-molv" lay-filter="" style="background-color: #2bb8aa;">
+
+			<li class="layui-nav-item">
+				<span>美团后台</span>
+			</li>
+
+			<li class="layui-nav-item" style="float: right;">
+				<a href=""><img src="img/user.png" class="layui-nav-img">我</a>
+				<dl class="layui-nav-child">
+					<dd>
+						<a href="userinfo.html" target="Iframe">基本信息</a>
+					</dd>
+					<dd>
+						<a href="changepwd.html" target="Iframe">修改密码</a>
+					</dd>
+					<dd>
+						<a href="index.html">退了</a>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+
+		<ul class="layui-nav layui-nav-tree layui-nav-side" lay-filter="test" style="background-color: #2bb8aa;">
+			<!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+			<li class="layui-nav-item">
+				<a href="" style="font-size: 20px;">美团管理员后台</a>
+			</li>
+      <li class="layui-nav-item">
+        <a href="index.html">首页</a>
+      </li>
+			<li class="layui-nav-item layui-nav-itemed">
+				<a href="javascript:;">个人资料</a>
+				<dl class="layui-nav-child">
+					<dd>
+						<a href="userinfo.html" target="Iframe">基本信息</a>
+					</dd>
+					<dd>
+						<a href="changepwd.html" target="Iframe">修改密码</a>
+					</dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item">
+				<a href="javascript:;">用户管理</a>
+				<dl class="layui-nav-child">
+					<dd>
+						<a href="users.html" target="Iframe">用户信息</a>
+					</dd>
+					<dd>
+						<a href="userOrder.html" target="Iframe">用户订单</a>
+					</dd>
+					<dd>
+						<a href="evaluate.html" target="Iframe">套餐信息</a>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+		<div style=" width: 1235px; height: 520px;margin-left: 200px;">
+			<iframe width="100%" height="100%" id="change" src="userinfo.html" name="Iframe">
+				
+			</iframe>
+		</div>
+	</body>
+
+</html>

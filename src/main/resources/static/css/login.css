@@ -1,0 +1,47 @@
+.center{
+	width: 1500px;
+	height: 612px;
+}
+#header{
+	width: 980px;
+	height: 54px;
+	margin-left: 15%;
+	margin-top:10% ;
+	margin-bottom: -150px;
+}
+#login{
+	width: 320px;
+	height: 320px;
+	opacity: 0.8;
+	margin-left: 70%;
+	margin-top: -23%;
+	background-color: white;
+	float: left;
+}
+#icon{
+	width: 30px;
+	height: 30px;
+	position:absolute ;
+	z-index: 999;
+	padding-top: 6px;
+	padding-left: 7px;
+	font-size: 20px;
+	color: #C2C2C2;
+	background-color: white;
+	border: 1px solid #C2C2C2;
+}
+.input{
+	margin-left: 30px;
+	width: 240px;
+}
+#submit{
+	width: 270px;
+	margin-top: 20px;
+}
+.banner{
+	float: left;
+	width: 500px;
+	height: 400px;
+	margin-left: 15%;
+	margin-top: 5%;
+}

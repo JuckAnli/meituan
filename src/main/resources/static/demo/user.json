@@ -1,0 +1,72 @@
+{
+	"code": 0,
+	"count":20,
+	"data": [
+		{
+			"goods": "kfc",
+			"price": "100",
+			"num": 5,
+			"time": "2019-4-2",
+			"money": 500
+		}, {
+			"goods": "coco",
+			"price": "100",
+			"num": 5,
+			"time": "2019-4-2",
+			"money": 500
+		}, {
+			"goods": "kfc",
+			"price": "100",
+			"num": 5,
+			"time": "2019-4-2",
+			"money": 500
+		}
+		, {
+			"goods": "kfc",
+			"price": "100",
+			"num": 5,
+			"time": "2019-4-2",
+			"money": 500
+		}
+		, {
+			"goods": "kfc",
+			"price": "100",
+			"num": 5,
+			"time": "2019-4-2",
+			"money": 500
+		}, {
+			"goods": "kfc",
+			"price": "100",
+			"num": 5,
+			"time": "2019-4-2",
+			"money": 500
+		}, {
+			"goods": "kfc",
+			"price": "100",
+			"num": 5,
+			"time": "2019-4-2",
+			"money": 500
+		}, {
+			"goods": "kfc",
+			"price": "100",
+			"num": 5,
+			"time": "2019-4-2",
+			"money": 500
+		}
+		, {
+			"goods": "kfc",
+			"price": "100",
+			"num": 5,
+			"time": "2019-4-2",
+			"money": 500
+		}
+		, {
+			"goods": "kfc",
+			"price": "100",
+			"num": 5,
+			"time": "2019-4-2",
+			"money": 500
+		}
+		
+	]
+}

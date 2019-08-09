@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script>
+			layui.config({
+				base: 'js/modules/' //存放新模块的目录，注意，不是layui的模块目录
+			}).use('userinfo'); //加载入口
+		</script>
+		<style>
+			#submit {
+				width: 200px;
+				margin-top: 20px;
+				margin-left: 110px;
+			}
+			#userinfo{
+				margin-left: 25%;
+				margin-top: 10%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="userinfo">
+			<form class="layui-form" >
+				<div class="layui-form-item ">
+					<div class="layui-inline ">
+						<label class="layui-form-label ">原密码</label>
+						<div class="layui-input-block ">
+							<input type="text " name="oldPassWord"  required lay-verify="required" class="layui-input " placeholder="请输入原始密码 " size="35px ">
+						</div>
+					</div>
+				</div>
+					<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">新密码</label>
+						<div class="layui-input-block">
+							<input id="pwd" type="password" name="password" autocomplete="off" required lay-verify="pass" class="layui-input" placeholder="使用6位数以上大小写字母加数字" size="35px">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">确认密码</label>
+						<div class="layui-input-block">
+							<input id="pwd2" type="password" name="password2" autocomplete="off" required lay-verify="eq" class="layui-input" size="35px">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-input-inline">
+						<button id="submit" lay-submit="" lay-filter="change" class="layui-btn">确认修改并提交</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</body>
+</html>
